@@ -1,0 +1,53 @@
+// 
+// _buttons.scss
+// 
+
+button,a {
+  outline: none !important;
+}
+
+
+// Rounded Buttons
+.btn-rounded {
+  border-radius: 30px;
+}
+
+.btn-dark{
+  color: $gray-200 !important;
+}
+
+.btn-primary {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.disabled,
+  &:disabled {
+      background-color: var(--bs-primary);
+      border-color: var(--bs-primary);
+      &:focus {
+          box-shadow: 0 0 0 $btn-focus-width var(--bs-primary);
+      }
+  }
+}
+
+
+.btn-outline-primary {
+  color: var(--bs-primary);
+  border-color: var(--bs-primary);
+  &:hover,
+  &:focus,
+  &:active,
+  &.disabled,
+  &:disabled {
+      background-color: var(--bs-primary);
+      border-color: var(--bs-primary);
+      color: $white;
+      &:focus {
+          box-shadow: 0 0 0 $btn-focus-width var(--bs-primary);
+      }
+  }
+}
+
